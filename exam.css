@@ -1,0 +1,393 @@
+body{
+  overflow: hidden;
+}
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #333;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+#loding{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+  z-index: 999999999;
+}
+/* General style */
+.main-color {
+    color: #e65f78;
+  }
+  /* Header */
+  .home .navbar-light .navbar-nav .nav-link.active {
+    color: #e65f78;
+  }
+  .home .navbar-light .navbar-nav .nav-link {
+    color: black;
+  }
+  .home .navbar-light .navbar-nav .nav-link:hover {
+    color: #e65f78;
+  }
+  .home {
+    height: 100vh;
+    background-image: url(img/1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .home .home__content .img-thumbnail {
+    background-color: #003c4b;
+    border: 1px solid #003c4b;
+  }
+  .home .home__content h5::after {
+    content: "";
+    animation: typing 1.2s ease-in-out 0s infinite alternate;
+  }
+  @keyframes typing {
+    0% {
+      content: " ";
+    }
+    10% {
+      content: " F";
+    }
+    20% {
+      content: " Fr";
+    }
+    30% {
+      content: " Fre";
+    }
+    40% {
+      content: " Free";
+    }
+    50% {
+      content: " Freel";
+    }
+    60% {
+      content: " Freela";
+    }
+    70% {
+      content: " Freelan";
+    }
+    80% {
+      content: " Freelanc";
+    }
+    90% {
+      content: " Freelance";
+    }
+    100% {
+      content: " Freelancer";
+    }
+  }
+  .home .home__icons .setting__icon {
+    top: 30%;
+    animation: fa-spin 2s 0s infinite linear;
+  }
+  .home .home__icons .down__icon {
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moving 2.5s ease-in-out 0s infinite alternate;
+  }
+  @keyframes moving {
+    0% {
+      bottom: 10%;
+    }
+    25% {
+      bottom: 17%;
+    }
+    50% {
+      bottom: 11%;
+    }
+    75% {
+      bottom: 13%;
+    }
+    100% {
+      bottom: 10%;
+    }
+  }
+  .about{
+    height: auto;
+  }
+  .about h5{
+color: #e65f78;
+
+  }
+  .about h2{
+    line-height: 1.4;
+    font-family: poppins;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-size: 30px;
+        font-weight: 800;
+      }
+      .about .text-about h3 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.4;
+        font-family: poppins;
+        color: #000;
+      }
+      .about .text-about p {
+        font-family: mulish;
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: .5px;
+        word-wrap: break-word;
+        font-weight: 400;
+        color: #333;
+        width: 90%;
+      }
+      .icon-about i {
+        color: var(--customcolor);
+          color:crimson;
+          text-decoration: none;
+          }
+      
+      .icon-about ul li {
+        list-style-type: none;
+        font-weight: 600;
+        color: #000;
+      }
+      .icon-about ul span{
+        font-family: mulish;
+      font-size: 16px;
+      line-height: 2;
+      letter-spacing: .5px;
+      word-wrap: break-word;
+      font-weight: 400;
+      color: #333;
+      
+      }
+      ul li{
+        color:crimson;
+        text-decoration: none;
+        
+        }
+      .about h3::after{
+        content: "|";
+        color: #e65f78;
+        animation-name: typing;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+       display: block;
+      }
+      @keyframes typing{
+        0%{content: "|";}
+        5%{content: "r.|";}
+        10%{content: "er.|";}
+        15%{content: "her.|";}
+        20%{content: "pher.|";}
+        25%{content: "apher.|";}
+        30%{content: "rapher.|";}
+        35%{content: "grapher.|";}
+        40%{content: "ographer.|";}
+        45%{content: "tographer.|";}
+        50%{content: "otographer.|";}
+        55%{content: "hotographer.|";}
+        60%{content: "photographer.|";}
+      
+      }
+      .imgs img{
+      
+        transition:2s all;
+        
+      }
+      .imgs img:hover{
+        transform: translate3d(16.52px, 15.08px, 0px);
+        transform-style: preserve-3d;
+      }
+      .arlo_tm_button {
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+        text-align: center;
+      padding-top: 5px;
+      transition: all;
+      }
+      .arlo_tm_button a{
+        position: relative;
+      }
+      .arlo_tm_button a::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        height: 100%;
+        left: -25%;
+        width: 0%;
+        background-color: rgba(255,255,255,.1);
+        transform: skew(50deg);
+        transition-duration: .6s;
+        z-index: 1;
+      }
+      
+      .arlo_tm_all_wrap[data-color="crimson"] .arlo_tm_button a {
+        background-color: #e65f78;
+      }
+      .arlo_tm_button a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #e65f78;
+        display: inline-block;
+        padding: 12px 45px;
+        font-family: poppins;
+        position: relative;
+        overflow: hidden;
+      }
+      #Services{
+       background-color:#d6cccc;
+       margin-top: 50px;
+      }
+      #Services h5{
+        color: #e65f78;
+        
+          }
+          .item h3{
+            padding-top: 40px;
+          }
+          .item p{
+            padding-top: 20px;
+            
+   color: rgb(141, 136, 136);
+    
+          }
+          .item{
+            box-shadow: 0 0 20px rgba(243, 152, 152, 0.09);
+          }
+          #Portfolio h5{
+            color: #e65f78 !important;
+              }
+              .item2{
+                position: relative;
+                transition: all 1s;
+              }
+              .item2:hover img{
+                transform: scale(1.2);
+              }
+              .item-layer{
+                position:absolute;
+                background-color: white;
+                width: 130px;
+                height: 60px;
+                display: none;
+                transition: all 2s;
+              }
+              .item2:hover .item-layer{
+                display: block;
+              }
+              .nav-item .active{
+color: #e65f78 !important;
+              }
+              .counter{
+                background-image: url(img/ravenna.png);
+                height: 35vh;
+              }
+              #News h5{
+                color: #e65f78 !important;
+              }
+              .item3{
+               
+                transition: all 2s;
+              }
+              .item3:hover img{
+                transform: scale(1.2);
+              }
+              .layer:hover h3{
+                color: #e65f78;
+              }
+              #Contact h5{
+                color: #e65f78 !important;
+              }
+              .contant p{
+               
+                  display: block;
+                  margin-block-start: 1em;
+                  margin-block-end: 1em;
+                  margin-inline-start: 0px;
+                  margin-inline-end: 0px;
+              }
+            
+              .contant2{
+                height:50vh;
+                width: 75%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: rgb(229, 227, 223);
+                text-align: center;
+                justify-content: center;
+                display: flex;
+              }
+              .arlo_tm_section {
+                width: 100%;
+                height: auto;
+                clear: both;
+                float: left;
+                background-color: #000;
+            }
+            .copyright-box{
+              width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding: 80px 0;
+            }
+            .icons{
+              width: 2rem;
+              height: 2rem;
+            }
